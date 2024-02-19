@@ -1,0 +1,17 @@
+### 5. 쿠버네티스 설치
+
+- 도커 컨테이너, 도커 스웜, 도커 컴포즈와 같은 개념을 한군데로 모아 사용할 수 있는 프로젝트: 쿠버네티스
+- 주의 사항
+    - 타 오케스트레이션 툴보다 다양한 지식을 필요로 함
+    - 따라서 쿠버네티스 자체의 관리가 더욱 어려울 수도 있음. 
+    - 즉, 조직의 규모에 따라 오버 엔지니어링이 될 수 있으니, 운영/관리의 인력과 비용을 고려하여 도입 필요.
+
+### 5.1 쿠버네티스 설치 환경의 종류
+
+- 개발 용도: Minikube, Docker Desktop for Mac/Windows에 내장된 쿠버네티스
+    - standalone 모드로 사용하기 때문에 기능을 학습하기에 적합하지 않음.
+- 서비스 테스트 또는 운영 용도: kops, kubespray, kubeadm, EKS(AWS), GKE(Google)
+    - AWS, GKE와 같은 클라우드 플랫폼 활용
+    - 또는 on-premise 환경을 활용
+
+![쿠버네티스 설치 도구 및 서비스와 특징 비교](https://github.com/hydblab/thursday_k8s/blob/main/alghost/assets/img1.jpg?raw=true)
